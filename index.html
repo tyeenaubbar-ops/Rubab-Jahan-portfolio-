@@ -7,206 +7,101 @@
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-    background:#0f172a;
-    color:white;
+background:#0f172a;
+color:#fff;
 }
 
 header{
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
-    text-align:center;
-    padding:70px 20px;
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
 }
 
 header h1{
-    font-size:50px;
+font-size:48px;
 }
 
 header p{
-    color:#ddd;
-    margin-top:10px;
-    font-size:18px;
+margin-top:10px;
+color:#ddd;
 }
 
 .gallery{
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+width:90%;
+max-width:1200px;
+margin:40px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
-    background:#1e293b;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,.5);
 }
 
 .card img{
-    width:100%;
-    height:300px;
-    object-fit:contain;
-    background:#111827;
-    cursor:pointer;
+width:100%;
+height:300px;
+object-fit:contain;
+background:#111827;
+cursor:pointer;
 }
 
 .card h3{
-    padding:15px 15px 5px;
+padding:15px 15px 5px;
 }
 
 .card p{
-    padding:0 15px 20px;
-    color:#bbb;
+padding:0 15px 20px;
+color:#bbb;
 }
 
 .modal{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.95);
-    justify-content:center;
-    align-items:center;
-    z-index:999;
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:9999;
 }
 
 .modal img{
-    max-width:95%;
-    max-height:95%;
+max-width:95%;
+max-height:95%;
 }
 
 .close{
-    position:absolute;
-    top:20px;
-    right:30px;
-    font-size:40px;
-    color:white;
-    cursor:pointer;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Rubab</h1>
-<p>Graphic Designer | Portfolio</p>
-</header>
-
-<section class="gallery"><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rubab | Graphic Design Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+cursor:pointer;
+color:white;
 }
 
-body{
-    background:#0f172a;
-    color:white;
-}
-
-header{
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
-    text-align:center;
-    padding:70px 20px;
-}
-
-header h1{
-    font-size:50px;
-}
-
-header p{
-    color:#ddd;
-    margin-top:10px;
-    font-size:18px;
-}
-
-.gallery{
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#1e293b;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:contain;
-    background:#111827;
-    cursor:pointer;
-}
-
-.card h3{
-    padding:15px 15px 5px;
-}
-
-.card p{
-    padding:0 15px 20px;
-    color:#bbb;
-}
-
-.modal{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.95);
-    justify-content:center;
-    align-items:center;
-    z-index:999;
-}
-
-.modal img{
-    max-width:95%;
-    max-height:95%;
-}
-
-.close{
-    position:absolute;
-    top:20px;
-    right:30px;
-    font-size:40px;
-    color:white;
-    cursor:pointer;
+footer{
+text-align:center;
+padding:30px;
+color:#aaa;
 }
 </style>
 </head>
@@ -219,69 +114,220 @@ header p{
 </header>
 
 <section class="gallery">
-    <div class="card">
-    <img src="10_20260628_180929_0001.jpg" alt="Design 1">
-    <h3>Design 1</h3>
-    <p>Football Poster</p>
+
+<div class="card">
+<img src="10_20260628_180929_0001.jpg" alt="">
+<h3>Design 1</h3>
+<p>Football Poster</p>
 </div>
 
 <div class="card">
-    <img src="2_20260628_181045_0000.jpg" alt="Design 2">
-    <h3>Design 2</h3>
-    <p>Sports Design</p>
+<img src="2_20260628_181045_0000.jpg" alt="">
+<h3>Design 2</h3>
+<p>Sports Design</p>
 </div>
 
 <div class="card">
-    <img src="110_20260628_181045_0002.jpg" alt="Design 3">
-    <h3>Design 3</h3>
-    <p>Creative Poster</p>
+<img src="110_20260628_181045_0002.jpg" alt="">
+<h3>Design 3</h3>
+<p>Creative Poster</p>
 </div>
 
 <div class="card">
-    <img src="130_20260628_181045_0003.jpg" alt="Design 4">
-    <h3>Design 4</h3>
-    <p>Graphic Design</p>
+<img src="130_20260628_181045_0003.jpg" alt="">
+<h3>Design 4</h3>
+<p>Graphic Design</p>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubab | Graphic Design Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+header{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+font-size:48px;
+}
+
+header p{
+margin-top:10px;
+color:#ddd;
+}
+
+.gallery{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:contain;
+background:#111827;
+cursor:pointer;
+}
+
+.card h3{
+padding:15px 15px 5px;
+}
+
+.card p{
+padding:0 15px 20px;
+color:#bbb;
+}
+
+.modal{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.modal img{
+max-width:95%;
+max-height:95%;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+cursor:pointer;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Rubab</h1>
+<p>Graphic Designer | Portfolio</p>
+</header>
+
+<section class="gallery">
+
+<div class="card">
+<img src="10_20260628_180929_0001.jpg" alt="">
+<h3>Design 1</h3>
+<p>Football Poster</p>
 </div>
 
 <div class="card">
-    <img src="10_20260628_180929_0002.jpg" alt="Design 5">
-    <h3>Design 5</h3>
-    <p>Creative Artwork</p>
+<img src="2_20260628_181045_0000.jpg" alt="">
+<h3>Design 2</h3>
+<p>Sports Design</p>
 </div>
 
 <div class="card">
-    <img src="81_20260628_133907_0080.png" alt="Design 6">
-    <h3>Design 6</h3>
-    <p>Poster Design</p>
+<img src="110_20260628_181045_0002.jpg" alt="">
+<h3>Design 3</h3>
+<p>Creative Poster</p>
 </div>
 
 <div class="card">
-    <img src="59_20260628_133906_0058.png" alt="Design 7">
-    <h3>Design 7</h3>
-    <p>Banner Design</p>
+<img src="130_20260628_181045_0003.jpg" alt="">
+<h3>Design 4</h3>
+<p>Graphic Design</p>
+</div>
+<div class="card">
+<img src="10_20260628_180929_0002.jpg" alt="">
+<h3>Design 5</h3>
+<p>Creative Artwork</p>
+</div>
+
+<div class="card">
+<img src="81_20260628_133907_0080.png" alt="">
+<h3>Design 6</h3>
+<p>Poster Design</p>
+</div>
+
+<div class="card">
+<img src="59_20260628_133906_0058.png" alt="">
+<h3>Design 7</h3>
+<p>Banner Design</p>
 </div>
 
 </section>
 
-<div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img id="modalImg">
+<div id="imageModal" class="modal">
+<span class="close">&times;</span>
+<img id="modalImg">
 </div>
+
+<footer>
+© 2026 Rubab | All Rights Reserved
+</footer>
 
 <script>
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
 
-document.querySelectorAll(".card img").forEach(img=>{
-    img.addEventListener("click",()=>{
-        modal.style.display="flex";
-        modalImg.src=img.src;
+document.querySelectorAll(".card img").forEach(img => {
+    img.addEventListener("click", function () {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
     });
 });
 
-function closeModal(){
-    modal.style.display="none";
-}
+closeBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    modal.style.display = "none";
+});
+
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
 </script>
 
 </body>
