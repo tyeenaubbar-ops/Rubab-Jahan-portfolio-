@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubab | Graphic Design Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    color:#ddd;
+}
+
+.gallery{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1f2937;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#bbb;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rubab</h1>
+    <p>Graphic Designer | Portfolio</p>
+</header>
+
+<section class="gallery">
+
+<div class="card">
+<img src="design1.jpg" alt="Design 1">
+<h3>Portugal Theme</h3>
+<p>Social media banner design.</p>
+</div>
+
+<div class="card">
+<img src="design2.jpg" alt="Design 2">
+<h3>Sports Poster</h3>
+<p>Creative football poster.</p>
+</div>
+
+<div class="card">
+<img src="design3.jpg" alt="Design 3">
+<h3>Branding Design</h3>
+<p>Modern promotional artwork.</p>
+</div>
+
+<div class="card">
+<img src="design4.jpg" alt="Design 4">
+<h3>Creative Poster</h3>
+<p>Minimal & clean design.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Rubab | All Rights Reserved
+</footer>
+
+</body>
+</html>
